@@ -1,6 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var ellipsisbot = require('./liftdListen');
+var liftd = require('./liftd');
 var app = express();
 var port = process.env.PORT || 8181;
 
