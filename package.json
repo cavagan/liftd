@@ -8,7 +8,7 @@
   },
   "author": "Jwtyler",
   "dependencies":{
-	"express": "= ^4.x.x",
+	"express": "= ^4.12.3",
 	"body-parser": "^1.x.x",
 	"pg": "4.x"
 	},
