@@ -16,7 +16,7 @@ app.get('/', function (req, res) { res.status(200).send('You damn shit!') });
 
 
  // Route that listens for a POST
- app.post('/liftd',liftdListen);
+ app.post('/liftd',liftd);
  
 // error handler
 app.use(function (err, req, res, next) {
