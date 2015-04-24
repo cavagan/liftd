@@ -1,4 +1,5 @@
 var express = require('express')
+, async = require('async')
  , http = require('http');
  var bodyParser = require('body-parser');
 
@@ -18,8 +19,8 @@ app.use(express.static(__dirname + '/html'));
 
 app.post('/liftd/',function(request,response,next){
 
-   var keyName=request.body.Key;
-   console.log(keyName);
+   var ping=request.body.txt;
+   console.log(ping);
 
 } );
 
