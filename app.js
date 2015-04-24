@@ -8,7 +8,7 @@ var app = express();
 
 
 // body parser middleware
-app.use(bodyParser.urlencoded({ extended: true }));
+//app.use(bodyParser.urlencoded({ extended: true }));
 
 app.set('port', process.env.PORT || 8181);
 
