@@ -12,7 +12,7 @@ app.set('port', process.env.PORT || 8181);
 app.get('/', function (req, res) { res.status(200).send('You damn shit!') });
 
 //router  to handle POST
-app.post('/',function(request,response){
+app.post('/',function(request,res){
 
    var ping = request.body;
    console.log(ping);
