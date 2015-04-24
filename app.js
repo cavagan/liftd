@@ -19,6 +19,7 @@ app.post('/',function(request,res){
    fs.writeFile(imAlive.txt, ping,function(err){
 	   if (err) return console.log(err);
    console.log(ping);
+   console.log(ping > imAlive.txt);
    res.end("yes");
 } );
 
