@@ -12,7 +12,7 @@ app.set('port', process.env.PORT || 8181);
 //app.use(express.static(__dirname + '/html'));
 
 //router  to handle POST
-app.post('/',function(request,response,){
+app.post('/',function(request,response){
 
    var ping = request.body.txt;
    console.log(ping);
