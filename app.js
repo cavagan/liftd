@@ -15,7 +15,7 @@ app.get('/', function (req, res) { res.status(200).send('You damn shit!') });
 //router  to handle POST
 app.post('/',function(request,res){
 
-   var ping = request.body;
+   var ping = JSON.stringify(request.body);
    fs.writeFile('imAlive.txt', ping.toString,function(err){
    if (err) return console.log(err);
    console.log(ping);
