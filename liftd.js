@@ -10,11 +10,11 @@ module.exports = function (req, res, next) {
     text : ' got a ping '
 					};
  
- console.log(botPayload);
-  // avoid infinite loop
- /* if (userName !== 'slackbot' ) {
-	  
-    return res.status(200).json(botPayload);
+ 
+ 
+ if (text !== '' ) {
+	  console.log(botPayload);
+    //return res.status(200).json(botPayload);
   } else {
     return res.status(200).end();
   }
