@@ -17,7 +17,7 @@ app.post('/',function(request,res){
 
    var ping = JSON.stringify(request.body);
    logText = ping + '\n';
-   fs.appendFile('imAlive.txt', logText +,function(err){
+   fs.appendFile('imAlive.txt', logText,function(err){
    if (err) return console.log(err);
    console.log(ping);
    });
