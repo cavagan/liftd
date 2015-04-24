@@ -9,14 +9,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.set('port', process.env.PORT || 8181);
 
 //handle GET requests
-//app.use(express.static(__dirname + '/html'));
+app.get('/', function (req, res) { res.status(200).send('You damn shit!') });
 
 //router  to handle POST
 app.post('/',function(request,response){
 
-   var ping = request.body.txt;
+   var ping = request.body;
    console.log(ping);
-
+   res.end("yes");
 } );
 
 //start listening
