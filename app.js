@@ -1,7 +1,14 @@
 var express = require('express')
  , http = require('http');
+ var bodyParser = require('body-parser');
 
+ 
+ 
 var app = express();
+
+
+// body parser middleware
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.set('port', process.env.PORT || 8181);
 
