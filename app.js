@@ -8,13 +8,13 @@ var app = express();
 
 
 // body parser middleware
-//app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.set('port', process.env.PORT || 8181);
 
 app.use(express.static(__dirname + '/html'));
 
-app.use(express.bodyParser());
+//app.use(express.bodyParser());
 
 app.post('/liftd/',function(request,response,next){
 
