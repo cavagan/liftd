@@ -1,29 +1,22 @@
-var express = require('express');
-var bodyParser = require('body-parser');
-var liftd = require('./liftd');
+var express = require('express')
+ , http = require('http');
+
 var app = express();
-var port = process.env.PORT || 8181;
+
+app.set('port', process.env.PORT || 8181);
+
+app.use(express.static(__dirname + '/html'));
+
+app.use(express.bodyParser());
+
+app.post('/liftd/',function(request,response,next){
+
+   var keyName=request.body.Key;
+   console.log(keyName);
+
+} );
 
 
-
- 
-// body parser middleware
-app.use(bodyParser.urlencoded({ extended: true }));
- 
-// test route
-app.get('/', function (req, res) { res.status(200).send('You damn shit!') });
-
-
- // Route that listens for a POST
- app.post('/liftd',liftd);
- 
-// error handler
-app.use(function (err, req, res, next) {
-  console.error(err.stack);
-  res.status(400).send(err.message);
+http.createServer(app).listen(app.get('port'), function(){
+ console.log('Express server listening on port ' + app.get('port'));
 });
- 
-app.listen(port, function () {
-  console.log('liftd listening on port ' + port);
-});
-
