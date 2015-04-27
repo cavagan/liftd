@@ -1,0 +1,8 @@
+\\worlddc01\domain folder redirects\jtyler\documents\visual studio 2012\Projects\liftd\liftd\bin\Debug\liftd.exe.config
+\\worlddc01\domain folder redirects\jtyler\documents\visual studio 2012\Projects\liftd\liftd\obj\Debug\liftd.csprojResolveAssemblyReference.cache
+\\worlddc01\domain folder redirects\jtyler\documents\visual studio 2012\Projects\liftd\liftd\obj\Debug\liftd.ProjectInstaller.resources
+\\worlddc01\domain folder redirects\jtyler\documents\visual studio 2012\Projects\liftd\liftd\obj\Debug\liftd.csproj.GenerateResource.Cache
+\\worlddc01\domain folder redirects\jtyler\documents\visual studio 2012\Projects\liftd\liftd\bin\Debug\liftd.exe
+\\worlddc01\domain folder redirects\jtyler\documents\visual studio 2012\Projects\liftd\liftd\bin\Debug\liftd.pdb
+\\worlddc01\domain folder redirects\jtyler\documents\visual studio 2012\Projects\liftd\liftd\obj\Debug\liftd.exe
+\\worlddc01\domain folder redirects\jtyler\documents\visual studio 2012\Projects\liftd\liftd\obj\Debug\liftd.pdb
